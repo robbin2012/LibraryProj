@@ -1,0 +1,261 @@
+body{
+    background-color: #f1f1f1;
+
+}
+@media (max-width: 1200px) { body { width: 1200px; } }
+.top{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1EAF59;
+    font-size: 22px;
+    color: white;
+    /* text-align: center; */
+    padding: 0 7.5px;
+}
+.top .time{
+    padding: 10px;
+}
+.datetimebox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.datebox{
+    font-size: 10px;
+}
+.datebox div{
+    text-align: center;
+    line-height: 1 0px;
+}
+.imagebox{
+}
+.imagebox img{
+    height: 20px;
+    width: 20px;
+    margin: 0 5px; 
+    display: none;
+
+}
+
+.trapezoid{
+    position: relative;
+    font-size: 22px;
+}
+.trapezoid .titlebox{
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.trapezoid img{
+    position: relative;
+    top: 33px;
+    height: 200px;
+    width: 650px;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+
+}
+.info_box{
+    display: flex;
+    flex-direction: column;
+    font-size: 0px;
+    width: 60%;
+    margin: 28px 16px 18px 18px;
+
+}
+.image_info{
+    display: inline-block;
+    height: 395px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 5%;
+}
+.image_info #data_img{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+.image_info img{
+    /* 等比例缩放 */
+     
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 10px;
+}
+.image_info .title{
+    font-size: 15px;
+    position: absolute;
+    top:  25px;
+    left: 20px;
+    font-weight: 600; 
+
+}
+.image_info .number{
+    font-size: 15px;
+    color: #2cb563;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-weight: 600; 
+}
+.librarybox{
+    margin-top: 28px;
+    margin-right: 16px;
+    display: inline-block;
+    min-width: 35%;
+    height: 810px;
+    background-color: aliceblue;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+}
+
+.library{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    /* align-content: space-between; */
+    font-size: 0px;
+    font-weight: 700;
+    align-items: center;
+}
+.content .number{
+    font-size: 35px;
+}
+
+.content .title{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    
+}
+.circlebox{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0px 12px;
+    position: relative;
+}
+
+.choosed{
+    background-color: #2bcb6b;
+}
+.choosed .content{
+    color: white;
+}
+.choosed .circle{
+    background: conic-gradient(#aeeac4, #cdf3de);
+
+}
+.choosed .circle::after{
+    background-color: #48d47e;
+
+    content: "";
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.choosed .circlebox .head{
+    background-color: #cdf3de;
+}
+.choosed .circlebox .tail{
+    background-color: #aeecc7;
+}
+
+.nochoosed{
+    background-color: white; 
+}
+
+.nochoosed .circle{
+    background: conic-gradient(#2bcb6b, #00ffa8);
+
+}
+.nochoosed .circle::after{
+    background-color: #42bdc2;
+
+    content: "";
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.nochoosed .circlebox .head{
+    background-color: #00ffa8;
+}
+.nochoosed .circlebox .tail{
+    background-color: #1ddb7e;
+}
+.circle {
+    position: absolute;
+    width: 60px; height: 60px;
+    background: conic-gradient(#2bcb6b, #00ffa8);
+    border-radius: 50%;
+    -webkit-mask: radial-gradient(transparent 10px, #000 15px);
+}
+.circle::after{
+    background-color: #42bdc2;
+
+    content: "";
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.circlebox .head{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 0px;
+    left: 22.5px;
+    border-radius: 50%;
+}
+.circlebox .tail{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 0px;
+    bottom: 22.5px;
+    border-radius: 50%;
+    
+}
+
+.nochoosed .content .number{
+    color: #2bcc6e;
+}
+
+/* 动画属性 */ 
+.flip-list-move {
+    transition: transform 1s;
+  }

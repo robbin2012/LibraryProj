@@ -1,0 +1,817 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0022)http://www.muchool.com -->
+<HTML xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:o = "urn:schemas-microsoft-com:office:office"><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+
+<SCRIPT language=JavaScript>
+<!--
+var showit = new Array(10);
+
+function moveon(iteam,lineit){
+temp=eval(iteam)
+templine=eval(lineit)
+if(showit[1]){
+rec1.style.display = "";
+line_1.style.display = "";
+}else{
+rec1.style.display = "none";
+line_1.style.display = "none";
+} 
+temp.style.display = "";
+templine.style.display = "";
+}
+function moveout(iteam,lineit,i){
+temp=eval(iteam)
+templine=eval(lineit)
+if (showit[i]){
+temp.style.display = "";
+templine.style.display = "";
+}else{
+temp.style.display = "none";
+templine.style.display = "none";
+}
+}
+function clickit(i){
+if (showit[i]){
+showit[i]=false
+}else{
+showit[i]=true
+} 
+}
+-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.3790.4186" name=GENERATOR></HEAD>
+<BODY>
+	<A href="a.htm">柱状统计图</A> 
+	<A href="b.htm">曲线统计图</A> 
+	<A href="c.htm">三维饼状图</A> 
+
+<v:rect id=background style="LEFT: 40px; WIDTH: 700px; POSITION: absolute; TOP: 80px; HEIGHT: 350px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "gray">
+	<v:shadow on = "t" type = "single" color = "silver" offset = "4pt,4pt"></v:shadow>
+</v:rect>
+
+<v:group id=table style="LEFT: 40px; WIDTH: 700px; POSITION: absolute; TOP: 80px; HEIGHT: 350px" coordsize = "27500,12800">
+<v:Rect style="LEFT: 1500px; WIDTH: 23000px; POSITION: relative; TOP: 200px; HEIGHT: 800px" coordsize = "21600,21600" filled = "f" stroked = "f">
+	<v:TextBox style="MARGIN-TOP: 0.343pt; LEFT: auto; MARGIN-LEFT: 0.125pt; WIDTH: 439.093pt; TOP: auto; HEIGHT: 16.406pt" inset = "0,0,0,0">
+		<TABLE cellSpacing=0 width="100%" align=center border=0>
+		  <TBODY>
+		  <TR>
+			<TD vAlign=center align=middle>
+			  <DIV style="FONT-SIZE: 15pt; FONT-FAMILY: 黑体"><B>曲 线 统 计  图</B></DIV>
+			</TD>
+		  </TR>
+		  </TBODY>
+		 </TABLE>
+	</v:TextBox>
+</v:Rect>
+
+<v:rect id=back style="LEFT: 1700px; WIDTH: 20500px; POSITION: relative; TOP: 1200px; HEIGHT: 10500px" coordsize = "21600,21600" fillcolor = "#9cf" strokecolor = "#dfdfdf">
+	<v:fill rotate = "t" type = "gradient" angle = "-45" focus = "100%"></v:fill>
+</v:rect>
+
+<v:rect id=back2 style="LEFT: 23000px; WIDTH: 4000px; POSITION: relative; TOP: 1200px; HEIGHT: 10500px" coordsize = "21600,21600" fillcolor = "#9cf" stroked = "t" strokecolor = "#09f">
+	<v:fill rotate = "t" type = "gradient" angle = "-175" focus = "100%"></v:fill>
+	<v:shadow on = "t" type = "single" color = "silver" offset = "3pt,3pt"></v:shadow>
+</v:rect>
+
+
+<DIV onmouseover=moveon(rec1,line_1) style="CURSOR: hand" onclick=clickit(1) onmouseout=moveout(rec1,line_1,1)>
+	<v:Rect id=rec1 style="LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 1450px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#ff1919">
+		<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma"></v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 1500px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#ff1919" stroked = "f"></v:Rect>
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 1500px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.343pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场1</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+<DIV onmouseover=moveon(rec2,line_2) style="CURSOR: hand" onclick=clickit(2) onmouseout=moveout(rec2,line_2,2)>
+	<v:Rect id=rec2 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 2470px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#ffff19">
+		<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma">
+		</v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 2520px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#ffff19" stroked = "f"></v:Rect>
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 2520px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.656pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.375pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场2</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+
+<DIV onmouseover=moveon(rec3,line_3) style="CURSOR: hand" onclick=clickit(3) onmouseout=moveout(rec3,line_3,3)>
+	<v:Rect id=rec3 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 3490px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#1919ff">
+	<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma"></v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 3540px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#1919ff" stroked = "f"></v:Rect>
+	
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 3540px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.593pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.343pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场3</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+
+<DIV onmouseover=moveon(rec4,line_4) style="CURSOR: hand" onclick=clickit(4) onmouseout=moveout(rec4,line_4,4)>
+	<v:Rect id=rec4 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 4510px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#19ff19">
+		<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma"></v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 4560px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#19ff19" stroked = "f"></v:Rect>
+	
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 4560px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.5pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.343pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场4</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+
+<DIV onmouseover=moveon(rec5,line_5) style="CURSOR: hand" onclick=clickit(5) onmouseout=moveout(rec5,line_5,5)>
+	<v:Rect id=rec5 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 5530px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#fc0">
+		<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma"></v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 5580px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#fc0" stroked = "f"></v:Rect>
+	
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 5580px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.406pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.375pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场5</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+
+<DIV onmouseover=moveon(rec6,line_6) style="CURSOR: hand" onclick=clickit(6) onmouseout=moveout(rec6,line_6,6)>
+	<v:Rect id=rec6 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 6550px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#3cc">
+		<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma">
+	</v:fill>
+	
+	</v:Rect>
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 6600px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#3cc" stroked = "f">
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 6600px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.343pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.343pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场6</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+
+<DIV onmouseover=moveon(rec7,line_7) style="CURSOR: hand" onclick=clickit(7) onmouseout=moveout(rec7,line_7,7)>
+	<v:Rect id=rec7 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 7570px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#ff19ff">
+		<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma"></v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 7620px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#ff19ff" stroked = "f"></v:Rect>
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 7620px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.25pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.375pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场7</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+
+<DIV onmouseover=moveon(rec8,line_8) style="CURSOR: hand" onclick=clickit(8) onmouseout=moveout(rec8,line_8,8)>
+	<v:Rect id=rec8 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 8590px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#930">
+		<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma"></v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 8640px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#930" stroked = "f"></v:Rect>
+	
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 8640px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.187pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.343pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场8</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+
+<DIV onmouseover=moveon(rec9,line_9) style="CURSOR: hand" onclick=clickit(9) onmouseout=moveout(rec9,line_9,9)>
+	<v:Rect id=rec9 style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 9610px; HEIGHT: 800px" coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#f60">
+	<v:fill rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" o:opacity2 = "39321f" focus = "100%" method = "linear sigma"></v:fill>
+	</v:Rect>
+	
+	<v:Rect style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 9660px; HEIGHT: 700px" coordsize = "21600,21600" fillcolor = "#f60" stroked = "f"></v:Rect>
+	
+	<v:Rect style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 9660px; HEIGHT: 700px" coordsize = "21600,21600" filled = "f" stroked = "f">
+		<v:TextBox style="MARGIN-TOP: 4.093pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.343pt" inset = "0,4pt,0,0">
+			<DIV align=left>商场9</DIV>
+		</v:TextBox>
+	</v:Rect>
+</DIV>
+
+
+<DIV onmouseover=moveon(rec10,line_10) style="CURSOR: hand" onclick=clickit(10) onmouseout=moveout(rec10,line_10,10)>
+	<v:Rect id=rec10 
+	style="DISPLAY: none; LEFT: 23100px; WIDTH: 3800px; POSITION: relative; TOP: 10630px; HEIGHT: 800px" 
+	coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#ff8c19"><v:fill 
+	rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+	o:opacity2 = "39321f" focus = "100%" method = 
+	"linear sigma"></v:fill></v:Rect><v:Rect 
+	style="LEFT: 23200px; WIDTH: 600px; POSITION: relative; TOP: 10680px; HEIGHT: 700px" 
+	coordsize = "21600,21600" fillcolor = "#ff8c19" stroked = "f"></v:Rect><v:Rect 
+	style="LEFT: 24000px; WIDTH: 3400px; POSITION: relative; TOP: 10680px; HEIGHT: 700px" 
+	coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+	style="MARGIN-TOP: 4pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.656pt; WIDTH: 64.906pt; TOP: auto; HEIGHT: 10.375pt" 
+	inset = "0,4pt,0,0">
+	<DIV align=left>商场10</DIV></v:TextBox></v:Rect>
+</DIV>
+
+
+<v:line id=X style="Z-INDEX: 2" from = "1700,11700" to = "22700,11700" strokecolor = "black" 
+strokeweight = "1pt"><v:stroke endarrow = "classic"></v:stroke></v:line><v:line 
+id=Y style="Z-INDEX: 2" from = "1700,900" to = "1700,11700" strokecolor = 
+"black" strokeweight = "1pt"><v:stroke startarrow = 
+"classic"></v:stroke></v:line><v:Rect 
+style="LEFT: 100px; WIDTH: 1500px; POSITION: relative; TOP: 700px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.093pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.406pt; WIDTH: 28.625pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=right>人</DIV></v:TextBox></v:Rect><v:Rect 
+style="LEFT: 22200px; WIDTH: 2000px; POSITION: relative; TOP: 11900px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.281pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.062pt; WIDTH: 38.187pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=left>时间</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"1300,1700" to = "1700,1700" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "1700,1700" to = "2200,1200" strokecolor = 
+"#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,1200" to = "22200,1200" 
+strokecolor = "#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,2200" to = 
+"22200,2200" strokecolor = "#09f"><v:stroke dashstyle = 
+"dot"></v:stroke></v:line><v:Rect 
+style="LEFT: 100px; WIDTH: 1500px; POSITION: relative; TOP: 1250px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.125pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.406pt; WIDTH: 28.625pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=right>1000</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from 
+= "1300,3700" to = "1700,3700" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "1700,3700" to = "2200,3200" strokecolor = 
+"#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,3200" to = "22200,3200" 
+strokecolor = "#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,4200" to = 
+"22200,4200" strokecolor = "#09f"><v:stroke dashstyle = 
+"dot"></v:stroke></v:line><v:Rect 
+style="LEFT: 100px; WIDTH: 1500px; POSITION: relative; TOP: 3250px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.406pt; WIDTH: 28.625pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=right>800</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"1300,5700" to = "1700,5700" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "1700,5700" to = "2200,5200" strokecolor = 
+"#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,5200" to = "22200,5200" 
+strokecolor = "#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,6200" to = 
+"22200,6200" strokecolor = "#09f"><v:stroke dashstyle = 
+"dot"></v:stroke></v:line><v:Rect 
+style="LEFT: 100px; WIDTH: 1500px; POSITION: relative; TOP: 5250px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.406pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.406pt; WIDTH: 28.625pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=right>600</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"1300,7700" to = "1700,7700" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "1700,7700" to = "2200,7200" strokecolor = 
+"#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,7200" to = "22200,7200" 
+strokecolor = "#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,8200" to = 
+"22200,8200" strokecolor = "#09f"><v:stroke dashstyle = 
+"dot"></v:stroke></v:line><v:Rect 
+style="LEFT: 100px; WIDTH: 1500px; POSITION: relative; TOP: 7250px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.156pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.406pt; WIDTH: 28.625pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=right>400</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"1300,9700" to = "1700,9700" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "1700,9700" to = "2200,9200" strokecolor = 
+"#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,9200" to = "22200,9200" 
+strokecolor = "#09f"></v:line><v:line style="Z-INDEX: 2" from = "2200,10200" to 
+= "22200,10200" strokecolor = "#09f"><v:stroke dashstyle = 
+"dot"></v:stroke></v:line><v:Rect 
+style="LEFT: 100px; WIDTH: 1500px; POSITION: relative; TOP: 9250px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.687pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.406pt; WIDTH: 28.625pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=right>200</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"2200,11200" to = "22200,11200" strokecolor = "#09f"></v:line><v:line 
+style="Z-INDEX: 2" from = "2200,1200" to = "2200,11200" strokecolor = 
+"#09f"></v:line><v:line style="Z-INDEX: 2" from = "1700,11700" to = "2200,11200" 
+strokecolor = "#09f"></v:line><v:line style="Z-INDEX: 2" from = "1700,11700" to 
+= "1700,12000" strokecolor = "black"></v:line><v:line style="Z-INDEX: 2" from = 
+"1700,11700" to = "2200,11200" strokecolor = "#09f"><v:stroke dashstyle = 
+"shortDot"></v:stroke></v:line><v:line style="Z-INDEX: 2" from = "2200,1200" to 
+= "2200,11200" strokecolor = "#09f"><v:stroke dashstyle = 
+"shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 790px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.062pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>1月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"3518,11700" to = "3518,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "3518,11700" to = "4018,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "4018,1200" to = "4018,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 2609px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.281pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>2月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"5336,11700" to = "5336,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "5336,11700" to = "5836,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "5836,1200" to = "5836,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 4427px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.5pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>3月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"7154,11700" to = "7154,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "7154,11700" to = "7654,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "7654,1200" to = "7654,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 6245px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.718pt; WIDTH: 34.687pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>4月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"8972,11700" to = "8972,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "8972,11700" to = "9472,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "9472,1200" to = "9472,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 8063px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.156pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>5月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"10790,11700" to = "10790,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "10790,11700" to = "11290,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "11290,1200" to = "11290,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 9881px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.375pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>6月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"12609,11700" to = "12609,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "12609,11700" to = "13109,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "13109,1200" to = "13109,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 11700px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.593pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>7月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"14427,11700" to = "14427,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "14427,11700" to = "14927,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "14927,1200" to = "14927,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 13518px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.062pt; WIDTH: 34.687pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>8月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"16245,11700" to = "16245,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "16245,11700" to = "16745,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "16745,1200" to = "16745,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 15336px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>9月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from = 
+"18063,11700" to = "18063,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "18063,11700" to = "18563,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "18563,1200" to = "18563,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 17154px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.468pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>10月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from 
+= "19881,11700" to = "19881,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "19881,11700" to = "20381,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "20381,1200" to = "20381,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 18972px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.687pt; WIDTH: 34.687pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>11月</DIV></v:TextBox></v:Rect><v:line style="Z-INDEX: 2" from 
+= "21700,11700" to = "21700,12000" strokecolor = "black"></v:line><v:line 
+style="Z-INDEX: 2" from = "21700,11700" to = "22200,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:line 
+style="Z-INDEX: 2" from = "22200,1200" to = "22200,11200" strokecolor = 
+"#09f"><v:stroke dashstyle = "shortDot"></v:stroke></v:line><v:Rect 
+style="LEFT: 20790px; WIDTH: 1818px; POSITION: relative; TOP: 12100px; HEIGHT: 500px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.625pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.125pt; WIDTH: 34.718pt; TOP: auto; HEIGHT: 10.25pt" 
+inset = "0,0,0,0">
+<DIV align=center>12月</DIV></v:TextBox></v:Rect>
+<DIV id=line_1><v:line style="Z-INDEX: 10" from = "1850,9550" to = "3668,9970" 
+strokecolor = "#ff1919" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" 
+backdepth = "12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 10" from = "3668,9970" to 
+= "5486,1730" strokecolor = "#ff1919" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 10" from 
+= "5486,1730" to = "7304,11550" strokecolor = "#ff1919" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 10" from = "7304,11550" to = "9122,7860" strokecolor = "#ff1919" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 10" from = "9122,7860" to 
+= "10940,10550" strokecolor = "#ff1919" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 10" from 
+= "10940,10550" to = "12759,5600" strokecolor = "#ff1919" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 10" from = "12759,5600" to = "14577,2600" strokecolor = 
+"#ff1919" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 10" from = "14577,2600" 
+to = "16395,5030" strokecolor = "#ff1919" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 10" from 
+= "16395,5030" to = "18213,11300" strokecolor = "#ff1919" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 10" from = "18213,11300" to = "20031,9100" strokecolor = 
+"#ff1919" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 10" from = "20031,9100" 
+to = "21850,2040" strokecolor = "#ff1919" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line></DIV>
+<DIV id=line_2 style="DISPLAY: none"><v:line style="Z-INDEX: 20" from = 
+"1850,1710" to = "3668,10970" strokecolor = "#ffff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 20" from = "3668,10970" to = "5486,6600" strokecolor = "#ffff19" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 20" from = "5486,6600" to 
+= "7304,11190" strokecolor = "#ffff19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 20" from 
+= "7304,11190" to = "9122,9970" strokecolor = "#ffff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 20" from = "9122,9970" to = "10940,6690" strokecolor = "#ffff19" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 20" from = "10940,6690" 
+to = "12759,2030" strokecolor = "#ffff19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 20" from 
+= "12759,2030" to = "14577,8970" strokecolor = "#ffff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 20" from = "14577,8970" to = "16395,5020" strokecolor = 
+"#ffff19" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 20" from = "16395,5020" 
+to = "18213,7400" strokecolor = "#ffff19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 20" from 
+= "18213,7400" to = "20031,6700" strokecolor = "#ffff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 20" from = "20031,6700" to = "21850,11410" strokecolor = 
+"#ffff19" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_3 style="DISPLAY: none"><v:line style="Z-INDEX: 30" from = 
+"1850,3050" to = "3668,1670" strokecolor = "#1919ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 30" from = "3668,1670" to = "5486,1970" strokecolor = "#1919ff" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 30" from = "5486,1970" to 
+= "7304,10100" strokecolor = "#1919ff" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 30" from 
+= "7304,10100" to = "9122,7860" strokecolor = "#1919ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 30" from = "9122,7860" to = "10940,4100" strokecolor = "#1919ff" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 30" from = "10940,4100" 
+to = "12759,8900" strokecolor = "#1919ff" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 30" from 
+= "12759,8900" to = "14577,9970" strokecolor = "#1919ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 30" from = "14577,9970" to = "16395,2990" strokecolor = 
+"#1919ff" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 30" from = "16395,2990" 
+to = "18213,10100" strokecolor = "#1919ff" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 30" from 
+= "18213,10100" to = "20031,7300" strokecolor = "#1919ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 30" from = "20031,7300" to = "21850,8030" strokecolor = 
+"#1919ff" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_4 style="DISPLAY: none"><v:line style="Z-INDEX: 40" from = 
+"1850,5550" to = "3668,6300" strokecolor = "#19ff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 40" from = "3668,6300" to = "5486,9200" strokecolor = "#19ff19" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 40" from = "5486,9200" to 
+= "7304,6700" strokecolor = "#19ff19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 40" from 
+= "7304,6700" to = "9122,8970" strokecolor = "#19ff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 40" from = "9122,8970" to = "10940,8900" strokecolor = "#19ff19" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 40" from = "10940,8900" 
+to = "12759,9970" strokecolor = "#19ff19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 40" from 
+= "12759,9970" to = "14577,7900" strokecolor = "#19ff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 40" from = "14577,7900" to = "16395,11200" strokecolor = 
+"#19ff19" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 40" from = "16395,11200" 
+to = "18213,10070" strokecolor = "#19ff19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 40" from 
+= "18213,10070" to = "20031,4970" strokecolor = "#19ff19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 40" from = "20031,4970" to = "21850,6800" strokecolor = 
+"#19ff19" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_5 style="DISPLAY: none"><v:line style="Z-INDEX: 50" from = 
+"1850,10930" to = "3668,6300" strokecolor = "#fc0" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 50" from = "3668,6300" to = "5486,5200" strokecolor = "#fc0" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 50" from = "5486,5200" to 
+= "7304,9400" strokecolor = "#fc0" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 50" from 
+= "7304,9400" to = "9122,11550" strokecolor = "#fc0" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 50" from = "9122,11550" to = "10940,6900" strokecolor = "#fc0" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 50" from = "10940,6900" 
+to = "12759,8970" strokecolor = "#fc0" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 50" from 
+= "12759,8970" to = "14577,8500" strokecolor = "#fc0" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 50" from = "14577,8500" to = "16395,10890" strokecolor = "#fc0" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 50" from = "16395,10890" 
+to = "18213,6080" strokecolor = "#fc0" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 50" from 
+= "18213,6080" to = "20031,11010" strokecolor = "#fc0" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 50" from = "20031,11010" to = "21850,10070" strokecolor = "#fc0" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_6 style="DISPLAY: none"><v:line style="Z-INDEX: 60" from = 
+"1850,5950" to = "3668,5300" strokecolor = "#3cc" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 60" from = "3668,5300" to = "5486,5100" strokecolor = "#3cc" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 60" from = "5486,5100" to 
+= "7304,8260" strokecolor = "#3cc" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 60" from 
+= "7304,8260" to = "9122,9970" strokecolor = "#3cc" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 60" from = "9122,9970" to = "10940,4900" strokecolor = "#3cc" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 60" from = "10940,4900" 
+to = "12759,7970" strokecolor = "#3cc" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 60" from 
+= "12759,7970" to = "14577,10600" strokecolor = "#3cc" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 60" from = "14577,10600" to = "16395,10350" strokecolor = "#3cc" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 60" from = "16395,10350" 
+to = "18213,7970" strokecolor = "#3cc" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 60" from 
+= "18213,7970" to = "20031,11130" strokecolor = "#3cc" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 60" from = "20031,11130" to = "21850,9020" strokecolor = "#3cc" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_7 style="DISPLAY: none"><v:line style="Z-INDEX: 70" from = 
+"1850,2050" to = "3668,4300" strokecolor = "#ff19ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 70" from = "3668,4300" to = "5486,5200" strokecolor = "#ff19ff" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 70" from = "5486,5200" to 
+= "7304,7200" strokecolor = "#ff19ff" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 70" from 
+= "7304,7200" to = "9122,8970" strokecolor = "#ff19ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 70" from = "9122,8970" to = "10940,2900" strokecolor = "#ff19ff" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 70" from = "10940,2900" 
+to = "12759,6970" strokecolor = "#ff19ff" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 70" from 
+= "12759,6970" to = "14577,2000" strokecolor = "#ff19ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 70" from = "14577,2000" to = "16395,10030" strokecolor = 
+"#ff19ff" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 70" from = "16395,10030" 
+to = "18213,3100" strokecolor = "#ff19ff" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 70" from 
+= "18213,3100" to = "20031,7300" strokecolor = "#ff19ff" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 70" from = "20031,7300" to = "21850,7340" strokecolor = 
+"#ff19ff" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_8 style="DISPLAY: none"><v:line style="Z-INDEX: 80" from = 
+"1850,5550" to = "3668,3300" strokecolor = "#930" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 80" from = "3668,3300" to = "5486,10000" strokecolor = "#930" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 80" from = "5486,10000" 
+to = "7304,7000" strokecolor = "#930" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 80" from 
+= "7304,7000" to = "9122,6970" strokecolor = "#930" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 80" from = "9122,6970" to = "10940,8900" strokecolor = "#930" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 80" from = "10940,8900" 
+to = "12759,5970" strokecolor = "#930" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 80" from 
+= "12759,5970" to = "14577,7900" strokecolor = "#930" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 80" from = "14577,7900" to = "16395,8030" strokecolor = "#930" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 80" from = "16395,8030" 
+to = "18213,9100" strokecolor = "#930" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 80" from 
+= "18213,9100" to = "20031,3020" strokecolor = "#930" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 80" from = "20031,3020" to = "21850,10330" strokecolor = "#930" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_9 style="DISPLAY: none"><v:line style="Z-INDEX: 90" from = 
+"1850,7950" to = "3668,2300" strokecolor = "#f60" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 90" from = "3668,2300" to = "5486,9400" strokecolor = "#f60" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 90" from = "5486,9400" to 
+= "7304,6100" strokecolor = "#f60" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 90" from 
+= "7304,6100" to = "9122,4970" strokecolor = "#f60" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 90" from = "9122,4970" to = "10940,6900" strokecolor = "#f60" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 90" from = "10940,6900" 
+to = "12759,4970" strokecolor = "#f60" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 90" from 
+= "12759,4970" to = "14577,3100" strokecolor = "#f60" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 90" from = "14577,3100" to = "16395,7550" strokecolor = "#f60" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 90" from = "16395,7550" 
+to = "18213,7340" strokecolor = "#f60" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 90" from 
+= "18213,7340" to = "20031,6140" strokecolor = "#f60" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 90" from = "20031,6140" to = "21850,10300" strokecolor = "#f60" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV>
+<DIV id=line_10 style="DISPLAY: none"><v:line style="Z-INDEX: 100" from = 
+"1850,11050" to = "3668,9300" strokecolor = "#ff8c19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 100" from = "3668,9300" to = "5486,8000" strokecolor = "#ff8c19" 
+strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" 
+lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 100" from = "5486,8000" 
+to = "7304,5000" strokecolor = "#ff8c19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 100" 
+from = "7304,5000" to = "9122,2970" strokecolor = "#ff8c19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 100" from = "9122,2970" to = "10940,4900" strokecolor = 
+"#ff8c19" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 100" from = "10940,4900" 
+to = "12759,3970" strokecolor = "#ff8c19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 100" 
+from = "12759,3970" to = "14577,11200" strokecolor = "#ff8c19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 100" from = "14577,11200" to = "16395,5710" strokecolor = 
+"#ff8c19" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line><v:line style="Z-INDEX: 100" from = "16395,5710" 
+to = "18213,9410" strokecolor = "#ff8c19" strokeweight = ".1pt"><o:extrusion 
+v:ext="view" on = "t" backdepth = "12pt" lightposition = "-50000,-50000" 
+lightposition2 = "50000"></o:extrusion></v:line><v:line style="Z-INDEX: 100" 
+from = "18213,9410" to = "20031,11010" strokecolor = "#ff8c19" strokeweight = 
+".1pt"><o:extrusion v:ext="view" on = "t" backdepth = "12pt" lightposition = 
+"-50000,-50000" lightposition2 = "50000"></o:extrusion></v:line><v:line 
+style="Z-INDEX: 100" from = "20031,11010" to = "21850,5040" strokecolor = 
+"#ff8c19" strokeweight = ".1pt"><o:extrusion v:ext="view" on = "t" backdepth = 
+"12pt" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:line></DIV></v:group></BODY></HTML>

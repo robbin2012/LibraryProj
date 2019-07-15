@@ -1,0 +1,441 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0022)http://www.muchool.com -->
+<HTML xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office"><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+
+<META content="MSHTML 6.00.3790.4186" name=GENERATOR></HEAD>
+<BODY>
+	<A href="a.htm">柱状统计图</A> 
+	<A href="b.htm">曲线统计图</A> 
+	<A href="c.htm">三维饼状图</A> 
+<SCRIPT language=JavaScript>
+<!--
+onit=true
+num=0
+function moveup(iteam,top,txt,rec){
+temp=eval(iteam)
+tempat=eval(top)
+temptxt=eval(txt)
+temprec=eval(rec)
+at=parseInt(temp.style.top)
+temprec.style.display = ""; 
+if (num>27){
+temptxt.style.display = "";
+}
+if(at>(tempat-28)&&onit){
+num++
+temp.style.top=at-1
+Stop=setTimeout("moveup(temp,tempat,temptxt,temprec)",10)
+}else{
+return
+} 
+}
+function movedown(iteam,top,txt,rec){
+temp=eval(iteam)
+temptxt=eval(txt)
+temprec=eval(rec)
+clearTimeout(Stop)
+temp.style.top=top
+num=0
+temptxt.style.display = "none";
+temprec.style.display = "none";
+}
+function ontxt(iteam,top,txt,rec){
+temp = eval(iteam);
+temptxt = eval(txt);
+temprec = eval(rec)
+if (onit){
+temp.style.top = top-28;
+temptxt.style.display = "";
+temprec.style.display = "";
+}
+}
+function movereset(over){
+if (over==1){
+onit=false
+}else{
+onit=true
+}
+}
+-->
+</SCRIPT>
+ <v:shapetype id=Cake_3D coordsize = "21600,21600" o:spt = "95" path = 
+" al10800,10800@0@0@2@14 ae10800,10800,10800,10800@3@15 x e" adj = 
+"11796480,5400"></v:shapetype><v:shapetype id=3dtxt coordsize = "21600,21600" 
+o:spt = "136" path = " m@7,0 l@8,0 m@5,21600 l@6,21600 e" adj = "10800"><v:path 
+o:connectangles="270,180,90,0" 
+o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800" textpathok = "t" 
+o:connecttype = "custom"></v:path><v:textpath on = "t" fitshape = 
+"t"></v:textpath><o:lock shapetype="t" text="t" 
+v:ext="edit"></o:lock></v:shapetype><v:rect id=background 
+style="LEFT: 40px; WIDTH: 700px; POSITION: absolute; TOP: 80px; HEIGHT: 400px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "gray"><v:shadow 
+on = "t" type = "single" color = "silver" offset = 
+"4pt,4pt"></v:shadow></v:rect><v:group id=table 
+style="LEFT: 40px; WIDTH: 700px; POSITION: absolute; TOP: 80px; HEIGHT: 400px" 
+coordsize = "21000,11500"><v:Rect 
+style="LEFT: 500px; WIDTH: 20000px; POSITION: relative; TOP: 200px; HEIGHT: 800px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 0.687pt; LEFT: auto; MARGIN-LEFT: 0.5pt; WIDTH: 500pt; TOP: auto; HEIGHT: 20.875pt" 
+inset = "0,0,0,0">
+<TABLE cellSpacing=0 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle>
+      <DIV 
+  style="FONT-SIZE: 15pt; FONT-FAMILY: 黑体"><B>三维饼状图</B></DIV></TD></TR></TBODY></TABLE></v:TextBox></v:Rect><v:rect 
+id=back onmouseover=movereset(1) 
+style="LEFT: 500px; WIDTH: 20000px; POSITION: relative; TOP: 1000px; HEIGHT: 10000px" 
+onmouseout=movereset(0) coordsize = "21600,21600" fillcolor = "#9cf" strokecolor 
+= "#888"><v:fill rotate = "t" type = "gradient" angle = "-45" focus = 
+"100%"></v:fill></v:rect><v:rect id=back 
+style="LEFT: 15000px; WIDTH: 5000px; POSITION: relative; TOP: 1400px; HEIGHT: 9200px" 
+coordsize = "21600,21600" fillcolor = "#9cf" stroked = "t" strokecolor = 
+"#09f"><v:fill rotate = "t" type = "gradient" angle = "-175" focus = 
+"100%"></v:fill><v:shadow on = "t" type = "single" color = "silver" offset = 
+"3pt,3pt"></v:shadow></v:rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 4000px; POSITION: relative; TOP: 1500px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "black" stroked = "f" strokecolor = 
+"black"><v:TextBox 
+style="MARGIN-TOP: 4.125pt; FONT-SIZE: 11pt; LEFT: auto; MARGIN-LEFT: 8.5pt; WIDTH: 89pt; TOP: auto; HEIGHT: 11.25pt" 
+inset = "8pt,4pt,3pt,3pt">
+<DIV align=left><FONT 
+color=#ffffff><B>总数:12422人</B></FONT></DIV></v:TextBox></v:Rect><v:Rect id=rec1 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 2268px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#c00"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 2318px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#c00" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 2318px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.468pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.25pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场1:2000人</DIV></v:TextBox></v:Rect><v:Rect id=rec2 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 3086px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#3c6"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 3136px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#3c6" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 3136px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.031pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.281pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场2:1800人</DIV></v:TextBox></v:Rect><v:Rect id=rec3 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 3904px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#1919ff"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 3954px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#1919ff" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 3954px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.375pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.281pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场3:1700人</DIV></v:TextBox></v:Rect><v:Rect id=rec4 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 4722px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#19ff19"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 4772px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#19ff19" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 4772px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.718pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.25pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场4:1500人</DIV></v:TextBox></v:Rect><v:Rect id=rec5 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 5540px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#fc0"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 5590px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#fc0" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 5590px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.312pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.25pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场5:1222人</DIV></v:TextBox></v:Rect><v:Rect id=rec6 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 6359px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#600"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 6409px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#600" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 6409px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.687pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.25pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场6:1100人</DIV></v:TextBox></v:Rect><v:Rect id=rec7 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 7177px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#ff19ff"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 7227px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#ff19ff" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 7227px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.25pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.281pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场7:1000人</DIV></v:TextBox></v:Rect><v:Rect id=rec8 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 7995px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#c0f"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 8045px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#c0f" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 8045px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.593pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.281pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场8:800人</DIV></v:TextBox></v:Rect><v:Rect id=rec9 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 8813px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#00c"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 8863px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#00c" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 8863px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.187pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.281pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场9:700人</DIV></v:TextBox></v:Rect><v:Rect id=rec10 
+style="DISPLAY: none; LEFT: 15400px; WIDTH: 4300px; POSITION: relative; TOP: 9631px; HEIGHT: 800px" 
+coordsize = "21600,21600" fillcolor = "#efefef" strokecolor = "#ff8c19"><v:fill 
+rotate = "t" type = "gradient" opacity = "39321f" color2 = "fill darken(118)" 
+o:opacity2 = "39321f" focus = "100%" method = 
+"linear sigma"></v:fill></v:Rect><v:Rect 
+style="LEFT: 15500px; WIDTH: 600px; POSITION: relative; TOP: 9681px; HEIGHT: 700px" 
+coordsize = "21600,21600" fillcolor = "#ff8c19" stroked = "f"></v:Rect><v:Rect 
+style="LEFT: 16300px; WIDTH: 3400px; POSITION: relative; TOP: 9681px; HEIGHT: 700px" 
+coordsize = "21600,21600" filled = "f" stroked = "f"><v:TextBox 
+style="MARGIN-TOP: 5.531pt; FONT-SIZE: 9pt; LEFT: auto; MARGIN-LEFT: 0.25pt; WIDTH: 85pt; TOP: auto; HEIGHT: 13.25pt" 
+inset = "0,5pt,0,0">
+<DIV align=left>商场10:600人</DIV></v:TextBox></v:Rect></v:group>
+<DIV style="CURSOR: hand"><v:shape id=cake1 
+onmouseover=moveup(cake1,108.571428571429,txt1,rec1) 
+title="&nbsp;名&nbsp;&nbsp;称：商场1&#13;&#10;&nbsp;数&nbsp;&nbsp;值：2000人&#13;&#10;&nbsp;所占比例：16.1%&nbsp;&nbsp;" 
+style="Z-INDEX: 10; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 208.98" 
+onmouseout=movedown(cake1,108.571428571429,txt1,rec1); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#c00" adj = "3999007,0"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt1 
+onmouseover=ontxt(cake1,108.571428571429,txt1,rec1) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 327px; WIDTH: 50px; POSITION: absolute; TOP: 208px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "16.1%"></v:textpath><o:extrusion v:ext="view" 
+on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake2 
+onmouseover=moveup(cake2,108.571428571429,txt2,rec2) 
+title="&nbsp;名&nbsp;&nbsp;称：商场2&#13;&#10;&nbsp;数&nbsp;&nbsp;值：1800人&#13;&#10;&nbsp;所占比例：14.49%&nbsp;&nbsp;" 
+style="Z-INDEX: 11; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 264.042" 
+onmouseout=movedown(cake2,108.571428571429,txt2,rec2); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#3c6" adj = "4188930,0"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt2 
+onmouseover=ontxt(cake2,108.571428571429,txt2,rec2) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 399px; WIDTH: 50px; POSITION: absolute; TOP: 262px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "14.49%"></v:textpath><o:extrusion 
+v:ext="view" on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake3 
+onmouseover=moveup(cake3,108.571428571429,txt3,rec3) 
+title="&nbsp;名&nbsp;&nbsp;称：商场3&#13;&#10;&nbsp;数&nbsp;&nbsp;值：1700人&#13;&#10;&nbsp;所占比例：13.69%&nbsp;&nbsp;" 
+style="Z-INDEX: 12; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 314.766" 
+onmouseout=movedown(cake3,108.571428571429,txt3,rec3); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#1919ff" adj = "4283302,0"><v:fill rotate 
+= "t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" 
+o:opacity2 = "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt3 
+onmouseover=ontxt(cake3,108.571428571429,txt3,rec3) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 359px; WIDTH: 50px; POSITION: absolute; TOP: 318px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "13.69%"></v:textpath><o:extrusion 
+v:ext="view" on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake4 
+onmouseover=moveup(cake4,108.571428571429,txt4,rec4) 
+title="&nbsp;名&nbsp;&nbsp;称：商场4&#13;&#10;&nbsp;数&nbsp;&nbsp;值：1500人&#13;&#10;&nbsp;所占比例：12.08%&nbsp;&nbsp;" 
+style="Z-INDEX: 13; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 1.15200000000004" 
+onmouseout=movedown(cake4,108.571428571429,txt4,rec4); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#19ff19" adj = "4473225,0"><v:fill rotate 
+= "t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" 
+o:opacity2 = "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt4 
+onmouseover=ontxt(cake4,108.571428571429,txt4,rec4) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 257px; WIDTH: 50px; POSITION: absolute; TOP: 339px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "12.08%"></v:textpath><o:extrusion 
+v:ext="view" on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake5 
+onmouseover=moveup(cake5,108.571428571429,txt5,rec5) 
+title="&nbsp;名&nbsp;&nbsp;称：商场5&#13;&#10;&nbsp;数&nbsp;&nbsp;值：1222人&#13;&#10;&nbsp;所占比例：9.84%&nbsp;&nbsp;" 
+style="Z-INDEX: 12; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 40.608" 
+onmouseout=movedown(cake5,108.571428571429,txt5,rec5); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#fc0" adj = "4737466,0"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt5 
+onmouseover=ontxt(cake5,108.571428571429,txt5,rec5) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 168px; WIDTH: 50px; POSITION: absolute; TOP: 322px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "9.84%"></v:textpath><o:extrusion v:ext="view" 
+on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake6 
+onmouseover=moveup(cake6,108.571428571429,txt6,rec6) 
+title="&nbsp;名&nbsp;&nbsp;称：商场6&#13;&#10;&nbsp;数&nbsp;&nbsp;值：1100人&#13;&#10;&nbsp;所占比例：8.86%&nbsp;&nbsp;" 
+style="Z-INDEX: 11; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 74.268" 
+onmouseout=movedown(cake6,108.571428571429,txt6,rec6); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#600" adj = "4853072,0"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt6 
+onmouseover=ontxt(cake6,108.571428571429,txt6,rec6) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 125px; WIDTH: 50px; POSITION: absolute; TOP: 288px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "8.86%"></v:textpath><o:extrusion v:ext="view" 
+on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake7 
+onmouseover=moveup(cake7,108.571428571429,txt7,rec7) 
+title="&nbsp;名&nbsp;&nbsp;称：商场7&#13;&#10;&nbsp;数&nbsp;&nbsp;值：1000人&#13;&#10;&nbsp;所占比例：8.05%&nbsp;&nbsp;" 
+style="Z-INDEX: 10; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 104.706" 
+onmouseout=movedown(cake7,108.571428571429,txt7,rec7); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#ff19ff" adj = "4948623,0"><v:fill rotate 
+= "t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" 
+o:opacity2 = "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt7 
+onmouseover=ontxt(cake7,108.571428571429,txt7,rec7) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 124px; WIDTH: 50px; POSITION: absolute; TOP: 251px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "8.05%"></v:textpath><o:extrusion v:ext="view" 
+on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake8 
+onmouseover=moveup(cake8,108.571428571429,txt8,rec8) 
+title="&nbsp;名&nbsp;&nbsp;称：商场8&#13;&#10;&nbsp;数&nbsp;&nbsp;值：800人&#13;&#10;&nbsp;所占比例：6.44%&nbsp;&nbsp;" 
+style="Z-INDEX: 9; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 130.788" 
+onmouseout=movedown(cake8,108.571428571429,txt8,rec8); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#c0f" adj = "5138547,0"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt8 
+onmouseover=ontxt(cake8,108.571428571429,txt8,rec8) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 154px; WIDTH: 50px; POSITION: absolute; TOP: 223px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "6.44%"></v:textpath><o:extrusion v:ext="view" 
+on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake9 
+onmouseover=moveup(cake9,108.571428571429,txt9,rec9) 
+title="&nbsp;名&nbsp;&nbsp;称：商场9&#13;&#10;&nbsp;数&nbsp;&nbsp;值：700人&#13;&#10;&nbsp;所占比例：5.64%&nbsp;&nbsp;" 
+style="Z-INDEX: 8; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 152.532" 
+onmouseout=movedown(cake9,108.571428571429,txt9,rec9); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#00c" adj = "5232919,0"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt9 
+onmouseover=ontxt(cake9,108.571428571429,txt9,rec9) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 195px; WIDTH: 50px; POSITION: absolute; TOP: 207px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "5.64%"></v:textpath><o:extrusion v:ext="view" 
+on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV>
+<DIV style="CURSOR: hand"><v:shape id=cake10 
+onmouseover=moveup(cake10,108.571428571429,txt10,rec10) 
+title="&nbsp;名&nbsp;&nbsp;称：商场10&#13;&#10;&nbsp;数&nbsp;&nbsp;值：600人&#13;&#10;&nbsp;所占比例：4.81%&nbsp;&nbsp;" 
+style="Z-INDEX: 7; LEFT: 90px; WIDTH: 400px; POSITION: absolute; TOP: 108px; HEIGHT: 400px; rotation: 171.342" 
+onmouseout=movedown(cake10,108.571428571429,txt10,rec10); ; type = "#Cake_3D" 
+coordsize = "21600,21600" fillcolor = "#ff8c19" adj = "5330829,0"><v:fill rotate 
+= "t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" 
+o:opacity2 = "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><o:extrusion v:ext="view" on = "t" skewamt = "0%" 
+backdepth = "25pt" viewpointorigin = "0,0" viewpoint = "0,0" rotationangle = 
+"60" lightposition = "-50000,-50000" lightposition2 = 
+"50000"></o:extrusion></v:shape><v:shape id=txt10 
+onmouseover=ontxt(cake10,108.571428571429,txt10,rec10) 
+style="DISPLAY: none; Z-INDEX: 20; LEFT: 238px; WIDTH: 50px; POSITION: absolute; TOP: 200px; HEIGHT: 18px" 
+type = "#3dtxt" coordsize = "21600,21600" fillcolor = "white"><v:fill rotate = 
+"t" type = "gradient" opacity = "60293f" color2 = "fill lighten(120)" o:opacity2 
+= "60293f" angle = "-135" focus = "100%" method = 
+"linear sigma"></v:fill><v:textpath style="FONT-FAMILY: " 宋体?;v-text-kern:t? 
+fitpath = "t" trim = "t" string = "4.81%"></v:textpath><o:extrusion v:ext="view" 
+on = "t" backdepth = "8pt" lightposition = "0,0" lightposition2 = 
+"0,0"></o:extrusion></v:shape></DIV></BODY></HTML>
