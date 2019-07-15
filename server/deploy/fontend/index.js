@@ -86,7 +86,6 @@ var library = new Vue({
                       for (let i in that.librarydata){
                         if (res.data[j].device_id == that.librarydata[i].device_id){
                           // 不要忘了赋值动画实现属性
-                          res.data[j].show = true;
                           that.librarydata[i] = res.data[j];
                         }
                       }
@@ -97,18 +96,14 @@ var library = new Vue({
                     // document.getElementById("title").innerHTML = that.librarydata[that.showinglib_index].deviceName.replace("/(\s+)|(\n+)/g", "") ;
                     console.log(that.librarydata);
                     // 为每个项目添加属性，用于后续实现动画效果
-                    for (let i in that.librarydata){
-                      that.librarydata[i].show = true;
-                    }
+                    // for (let i in that.librarydata){
+                    //   that.librarydata[i].show = true;
+                    // }
                     console.log(that.librarydata);
                   }
                   // console.log(that.librarydata[0].Fin);
                   // 图
-                  // let item = that.librarydata.pop()
-                  // that.librarydata.unshift(item);
-                  // console.log(item);
-                  // console.log(that.library)
-                  // that.choosing(that.librarydata[0].device_id);
+         
                   dataimg.drawimg(res.data);
                 }else{
                   console.log("librarydata null");
@@ -125,13 +120,10 @@ var library = new Vue({
           var that = this;
           if (that.librarydata.length >= maxlength){
             // 消失动画
-            that.librarydata[maxlength].show = false; //展示的最后一项消失
             // 列表中实际的最后一项也要消失 并且要弹出
             let item = that.librarydata.pop(); 
-            item.show = false;
             // 添加到列表的开头，并且加入动画
             that.librarydata.unshift(item);
-            that.librarydata[0].show = true;
             
           }
         },
@@ -266,7 +258,7 @@ var dataimg = new Vue({
       var dom = document.getElementById("data_img");
       // 清空旧的图
       // dom.innerHTML = "";
-      var myChart = echarts.init(dom);
+      var myChart = echarts.init(dom, 'dark');
       var app = {};
       option = null;
       app.title = '坐标轴刻度与标签对齐';
@@ -281,45 +273,45 @@ var dataimg = new Vue({
       }
       // console.log(Fin);
       // console.log(libraryname);
+
+
       option = {
-          color: ['#3398DB'],
-          tooltip : {
-              trigger: 'axis',
-              axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                  type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-              }
-          },
-          grid: {
-              left: '3%',
-              right: '4%',
-              bottom: '3%',
-              containLabel: true
-          },
-          xAxis : [
-              {
-                  type : 'category',
-                  // x轴标题
-                  data : libraryname,
-                  axisTick: {
-                      alignWithLabel: true
-                  }
-              }
-          ],
-          yAxis : [
-              {
-                  type : 'value'
-              }
-          ],
-          series : [
-              {
-                  name:'进馆人数',
-                  type:'bar',
-                  barWidth: '60%',
-                  // Fin数据 y轴
-                  data:Fin
-              }
-          ]
-      };
+        color: ['#3398DB'],
+        tooltip : {
+            trigger: 'axis',
+            axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis : [
+            {
+                type : 'category',
+                data : libraryname,
+                axisTick: {
+                    alignWithLabel: true
+                }
+            }
+        ],
+        yAxis : [
+            {
+                type : 'value'
+            }
+        ],
+        series : [
+            {
+                name:'今日进馆人数',
+                type:'bar',
+                barWidth: '60%',
+                data:Fin
+            }
+        ]
+    };
 
       function show(option){
           if (option && typeof option === "object") {

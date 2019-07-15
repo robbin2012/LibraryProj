@@ -28,7 +28,7 @@
 <body>
 
     <div class="top">
-
+        <img src="top.svg" alt="" >
         <div class="datetimebox" v-on:click="gettime()">
 
             <div class="time">{{hour}}:{{minutes}}</div>
@@ -47,26 +47,25 @@
 
         <div class="trapezoid">
 
-            <div class="titlebox">
-                <!-- <div id="title">请确保系统已经开机</div> -->
+            <!-- <div class="titlebox">
                 <div>图书馆大数据</div>
             </div>
 
             <img src="titlebackground.svg" alt="当前">
 
-            
-
+             -->
+             <div>图书馆大数据</div>
         </div>
 
     
 
-        <div class="imagebox">
+        <!-- <div class="imagebox">
 
             <img src="msg.svg" alt="消息">
 
             <img src="setting.svg" alt="设置">
 
-        </div>
+        </div> -->
 
     </div>
 
@@ -116,7 +115,7 @@
         <div class="librarybox" >
 
             <transition-group name="flip-list" tag="div">
-            <div v-if="item.show" v-bind:class="[libraryClass , nochoosedClass]" v-for="(item, index) in librarydata" v-bind:key="item.device_id" v-on:click="fadeAction()" >
+            <div v-bind:class="[libraryClass , nochoosedClass]" v-for="(item, index) in librarydata" v-bind:key="item.device_id" v-on:click="fadeAction()" >
 
                 <div class="circlebox"><div class="circle"></div><div class="head"></div><div class="tail"></div></div>
 
